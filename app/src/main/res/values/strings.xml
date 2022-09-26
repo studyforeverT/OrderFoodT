@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="you_have_no_items_in_your_shopping_cart">You have no items in your shopping cart.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_have_no_items_in_your_favorite">You have no items in your favorite.</string>
+    <string name="shipment_info">Shipment Info</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="submit">Submit</string>
+    <string name="checkout">Checkout</string>
+    <string name="shipment_details">Shipment Details</string>
+    <string name="change">Change</string>
+    <string name="list_of_foods">List of foods</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="sub_total">Sub total</string>
+    <string name="fee_and_delivery">Fee and Delivery</string>
+    <string name="_0_vnd">0 VND</string>
+    <string name="total_price">Total Price</string>
+    <string name="pay">Pay</string>
+    <string name="you_have_no_items_in_your_notifications">You have no items in your notifications.</string>
+</resources>

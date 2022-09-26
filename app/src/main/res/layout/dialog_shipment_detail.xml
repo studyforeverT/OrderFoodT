@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="paymentVM"
+            type="com.nvc.orderfood.viewmodel.PaymentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shipment_info" />
+
+        <EditText
+            android:text="@{paymentVM.userInfo.nameUser}"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edt_name"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="15dp"
+            android:textSize="16sp"
+            android:hint="@string/receiver_name"
+            android:textColor="#3A3535"
+            android:background="@drawable/border_radius_8dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:text="@{paymentVM.userInfo.phoneUser}"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:id="@+id/edt_phone"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="15dp"
+            android:textSize="16sp"
+            android:hint="@string/phone"
+            android:textColor="#3A3535"
+            android:background="@drawable/border_radius_8dp" />
+
+        <EditText
+            android:text="@{paymentVM.userInfo.addressUser}"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edt_address"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="15dp"
+            android:textSize="16sp"
+            android:hint="@string/address"
+            android:textColor="#3A3535"
+            android:background="@drawable/border_radius_8dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/button_shape"
+            android:id="@+id/btn_submit"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+</layout>
